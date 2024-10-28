@@ -1,0 +1,12 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body{
+    background-image: url('https://s9.gifyu.com/images/SFTMz.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

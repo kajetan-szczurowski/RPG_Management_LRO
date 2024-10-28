@@ -9,15 +9,12 @@
 
 .left-side-container{
     width: 40vw;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .right-side-container{
     width: 40vw;
-    background-color: magenta;
-}
-
-.main-header{
-    height: 60px;
-    background-color: green;
+    background-image: url('images/characterBox.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
