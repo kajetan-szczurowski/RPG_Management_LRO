@@ -1,0 +1,23 @@
+.main-window{
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-container{
+    height: 80vh;
+}
+
+.left-side-container{
+    width: 40vw;
+    background-color: aqua;
+}
+
+.right-side-container{
+    width: 40vw;
+    background-color: magenta;
+}
+
+.main-header{
+    height: 60px;
+    background-color: green;
+}
