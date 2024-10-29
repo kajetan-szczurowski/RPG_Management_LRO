@@ -10,3 +10,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  :root{
+    --main-text-color: #a38b43;
+  }

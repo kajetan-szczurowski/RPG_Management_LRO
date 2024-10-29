@@ -1,6 +1,5 @@
 import { SignedIn, SignedOut, SignInButton, UserButton, useUser, useSession } from "@clerk/clerk-react";
 import UserInterface from "./assets/components/UserInterface/UserInterface";
-import './styles.css'
 
 
 function App() {

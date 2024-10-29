@@ -5,7 +5,22 @@ export default function UserInterface() {
         <>
         <main className = 'main-window'>
             <section className = 'left-side-container side-container'></section>
-            <section className = 'right-side-container side-container'></section>
+            <section className = 'right-side-container side-container'>
+
+                <header className = 'header-bar'></header>
+                <section className = 'character-buttons-bar buttons-bar'>
+                    <button >Hi</button>
+                </section>
+
+                <section className = 'right-side-navigation buttons-bar'>
+                    <button >Hi</button>
+                    <button >Hi</button>
+                    <button >Hi</button>
+
+                </section>
+                <section className = 'right-box'></section>
+
+            </section>
         </main>
         </>
     )
