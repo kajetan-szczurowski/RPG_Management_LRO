@@ -9,13 +9,13 @@ export default function UserInterface() {
 
                 <header className = 'header-bar'></header>
                 <section className = 'character-buttons-bar buttons-bar'>
-                    <button >Hi</button>
+                    <button className = 'focusable-button'>Hi</button>
                 </section>
 
                 <section className = 'right-side-navigation buttons-bar'>
-                    <button >Hi</button>
-                    <button >Hi</button>
-                    <button >Hi</button>
+                    <button  className = 'focusable-button'>Hi</button>
+                    <button  className = 'focusable-button'>Hi</button>
+                    <button  className = 'focusable-button'>Hi</button>
 
                 </section>
                 <section className = 'right-box'></section>

@@ -41,6 +41,10 @@
     font-size: 28px;
 }
 
+.focusable-button:hover{
+    background-color: var(--focus-color);
+}
+
 .buttons-bar button{
     background-color: #493f32;
     border: 4px solid #372e24;
