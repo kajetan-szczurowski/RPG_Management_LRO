@@ -8,6 +8,8 @@ export default function UserInterface() {
             <section className = 'right-side-container side-container'>
 
                 <header className = 'header-bar'></header>
+
+                
                 <section className = 'character-buttons-bar buttons-bar'>
                     <button className = 'focusable-button'>Hi</button>
                 </section>

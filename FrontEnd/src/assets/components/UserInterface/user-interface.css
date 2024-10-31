@@ -43,10 +43,11 @@
 
 .focusable-button:hover{
     background-color: var(--focus-color);
+    cursor: pointer;
 }
 
 .buttons-bar button{
-    background-color: #493f32;
+    background-color: var(--unfocused-color);
     border: 4px solid #372e24;
     text-transform: capitalize;
     font-weight: 700;
