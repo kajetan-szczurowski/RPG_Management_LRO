@@ -1,24 +1,26 @@
 import { SignedIn, SignedOut, SignInButton, UserButton, useUser, useSession } from "@clerk/clerk-react";
 import UserInterface from "./assets/components/UserInterface/UserInterface";
+import StateManager from "./StateManager";
 
 
 function App() {
 
-  const {user} = useUser();
-  const {session} = useSession();
-  console.log(user)
+  // const {user} = useUser();
+  // const {session} = useSession();
+  // console.log(user)
   return (
     <>
 
-      <UserInterface />
       <SignedOut>
         <SignInButton />
       </SignedOut>
       <SignedIn>
-        <UserButton />
-        Dzień Dobry
-        {session?.id}
-        <button onClick = {handleButton}>Fetch Test</button>
+        <UserInterface />
+        <StateManager/>
+        {/* <UserButton /> */}
+        {/* Dzień Dobry */}
+        {/* {session?.id} */}
+        {/* <button onClick = {handleButton}>Fetch Test</button> */}
       </SignedIn>
 
     </>

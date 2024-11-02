@@ -6,6 +6,8 @@ from os import getenv
 from dotenv import load_dotenv
 from flask_cors import CORS
 
+# python -m flask run
+
 app = Flask(__name__)
 CORS(app)
 load_dotenv()
@@ -20,9 +22,16 @@ def connection_test():
 def home():
     return jsonify({'message': 'all good, have fun'})
 
-auth = Clerk(
-    bearer_auth = AUTHENTICATION_KEY,
-)
+
+@app.route("/user-data", methods = ['POST'])
+def user_initiate():
+    request_data = request.get_json()
+    print(request_data)
+    return jsonify({'message': 'initialized'})
+
+# auth = Clerk(
+    # bearer_auth = AUTHENTICATION_KEY,
+# )
 
 # res = auth.sessions.get(session_id="sess_2o1ZHAr9bs8VwkqGU60h6OUEsoe")
 # res2 = auth.clients.get(client_id = "client_2lz6lnoltIOZ6T3u4UqfUoAyRzT")
