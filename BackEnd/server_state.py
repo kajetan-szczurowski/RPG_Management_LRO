@@ -1,7 +1,11 @@
 class Server:
     def __init__(self):
-        online_players = dict()
-        current_sessions = dict()
+        self.online_players = dict()
+        self.current_sessions = dict()
+        self.test_counter = 0
+
+    def increase(self):
+        self.test_counter = self.test_counter + 1
 
 
 server = Server()

@@ -1,32 +1,29 @@
 from flask import Flask
 from flask import request
 from flask import jsonify
-from clerk_backend_api import Clerk
+# from clerk_backend_api import Clerk
 from os import getenv
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from flask_cors import CORS
-from server_state import state
+from server_state import server
 
 # python -m flask run
 
-
-
-if __name__ == "__main__":
-    app = Flask(__name__)
-    CORS(app)
-    # load_dotenv()
-    # AUTHENTICATION_KEY = getenv("CLERK_SECRET_KEY")
-    main()
-
-def main():
-    pass
+app = Flask(__name__)
+CORS(app)
+ # load_dotenv()
+# AUTHENTICATION_KEY = getenv("CLERK_SECRET_KEY")
 
 @app.route('/test', methods = ['GET'])
 def connection_test():
+    server.increase()
+    return jsonify({'counter/test': server.test_counter})
     return jsonify({'message': 'all good, have fun'})
 
 @app.route("/")
 def home():
+    server.increase()
+    return jsonify({'counter': server.test_counter})
     return jsonify({'message': 'all good, have fun'})
 
 
