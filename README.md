@@ -12,7 +12,6 @@ This repo containts the newest version which is currently in early developement 
 - https://github.com/kajetan-szczurowski/LRO-old-version (first version I used this for playing with friends for over a year before switching to newer project).
 - https://github.com/kajetan-szczurowski/LRO-new-version (currently in use frontend made in React JS and Vite).
 - https://github.com/kajetan-szczurowski/FabulaUltimaBackend (currently in use backend made in Node JS and Express).
-- 
 ## Plans for this newest version
 
 - Proper user auth made with Clerk;
